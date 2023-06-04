@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTranslator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-serif">
+    <div class="w-screen h-screen grid place-items-center bg-slate-500 px-2 md:px-5 lg:px-0">
+        <div class="w-full lg:w-3/4 h-3/5 flex flex-col place-items-center rounded shadow-2xl bg-slate-300">
+            <div class="w-full h-full grid grid-cols-2 place-items-center">
+                <section class="w-full h-full flex flex-col p-1 sm:p-2 lg:p-4">
+                    <textarea class="w-full h-5/6 resize-none outline-none p-2 rounded shadow-2xl bg-transparent border border-slate-400" placeholder="Enter text" id="english_text"></textarea>
+                    <div class="w-full h-auto mt-5 grid place-items-center">
+                        <!-- <select name="lang" id="language" class="outline-none border-0 py-1 px-5 cursor-pointer">
+                            <option value="en" class="cursor-pointer">english</option>
+                            <option value="zh" class="cursor-pointer">chinees</option>
+                        </select> -->
+                    </div>
+                </section>
+                <section class="w-full h-full flex flex-col p-1 sm:p-2 lg:p-4">
+                    <textarea class="w-full h-5/6 resize-none outline-none p-2 rounded shadow-2xl bg-transparent border border-slate-400" placeholder="Translated text" id="translated_text"></textarea>
+                    <div class="w-full h-auto mt-5 grid place-items-center" id="select_div">
+                        <select name="lang" id="language-option" class="outline-none border-0 py-1 px-5 cursor-pointer">
+                            
+                        </select>
+                    </div>
+                </section>
+            </div>
+            <button class="relative w-1/2 p-2 mt-2 mb-2 text-white bg-slate-500 rounded uppercase" onclick="fetch_text()">translate</button>
+        </div>
+    </div>
+    <script src="countries.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
